@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://cfma007p0ttbc" path="res://Assets/gamebg.png" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://el8evdn3ibff" path="res://Scripts/spawner.gd" id="1_qxrlw"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2b7dg"]
+size = Vector2(1996.5237, 758.2135)
+
 [node name="Game" type="Node2D" unique_id=45109936]
 
 [node name="Spawner" type="Node2D" parent="." unique_id=321512283]
@@ -14,8 +17,20 @@ position = Vector2(1250, 195)
 [node name="bottom" type="Node2D" parent="Spawner" unique_id=938944472]
 position = Vector2(1250, 475)
 
-[node name="Gamebg" type="Sprite2D" parent="." unique_id=2106852135]
-modulate = Color(0, 0, 0, 1)
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=195013124]
 position = Vector2(576.75006, 329)
 scale = Vector2(0.5752499, 0.58349985)
+lock_rotation = true
+freeze = true
+
+[node name="Gamebg" type="Sprite2D" parent="RigidBody2D" unique_id=2106852135]
+modulate = Color(0, 0, 0, 1)
 texture = ExtResource("1_ebmjs")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="RigidBody2D" unique_id=1947170045]
+position = Vector2(-11.734103, 622.10803)
+shape = SubResource("RectangleShape2D_2b7dg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=226997955]
+position = Vector2(-6.5189953, -599.8288)
+shape = SubResource("RectangleShape2D_2b7dg")

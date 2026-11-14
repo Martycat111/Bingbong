@@ -18,7 +18,6 @@ func _ready() -> void:
 
 
 func spawn():
-	time_between_spawns -= 0.05
 	var instance = obstacle_scene.instantiate()
 	if randf_range(0, 1) > 0.5:
 		top_obstacles.add_child(instance)

@@ -17,3 +17,5 @@ func _process(delta: float) -> void:
 		self.position.x += delta * 100 * Globals.speed_multiplier
 	else:
 		self.position.x -= delta * 100 * Globals.speed_multiplier
+	if position.x > 1200:
+		queue_free()
