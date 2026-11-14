@@ -10,12 +10,12 @@ position = Vector2(583, 333.00003)
 scale = Vector2(2.32, 3.29)
 texture = ExtResource("1_xhh6f")
 
-[node name="Button" type="Button" parent="." unique_id=765674836]
-offset_left = 36.0
-offset_top = 46.0
-offset_right = 341.0
-offset_bottom = 166.0
+[node name="Label" type="Label" parent="." unique_id=1491945481]
+offset_left = 49.0
+offset_top = 86.0
+offset_right = 348.0
+offset_bottom = 141.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_cayip")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 36
 text = "BingBong"
