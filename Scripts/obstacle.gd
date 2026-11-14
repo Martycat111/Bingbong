@@ -14,6 +14,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if is_upside_down:
-		self.position.x += delta * 100
+		self.position.x += delta * 100 * Globals.speed_multiplier
 	else:
-		self.position.x -= delta * 100
+		self.position.x -= delta * 100 * Globals.speed_multiplier

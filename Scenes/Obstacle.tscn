@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cexxbucjbe86u"]
 
-[ext_resource type="Texture2D" uid="uid://jv3n2ggc3lkg" path="res://Assets/obstacle.png" id="1_uh273"]
+[ext_resource type="Texture2D" uid="uid://be65ssl2ydrh4" path="res://Assets/obstacle.png" id="1_uh273"]
 [ext_resource type="Script" uid="uid://ba4s2xsu60hpp" path="res://Scripts/obstacle.gd" id="2_2sxyv"]
 
 [node name="Obstacle" type="Node2D" unique_id=1117281392]

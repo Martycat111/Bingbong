@@ -6,12 +6,15 @@ var time_since_spawn = 0
 
 var obstacle_scene = load("res://Scenes/Obstacle.tscn")
 
+var player_scene = load("res://Scenes/Player.tscn")
+
 @onready var top_obstacles = get_node("top")
 @onready var bottom_obstacles = get_node("bottom")
 
 
 func _ready() -> void:
-	pass # Replace with function body.
+	var instance = player_scene.instantiate()
+	self.add_child(instance)
 
 
 func spawn():
@@ -25,6 +28,6 @@ func spawn():
 
 func _process(delta: float) -> void:
 	time_since_spawn += delta
-	if time_since_spawn > time_between_spawns:
+	if time_since_spawn > time_between_spawns *  1 - (Globals.speed_multiplier - 1): # bro what
 		time_since_spawn = 0
 		spawn()

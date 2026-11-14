@@ -15,6 +15,7 @@ position = Vector2(1250, 195)
 position = Vector2(1250, 475)
 
 [node name="Gamebg" type="Sprite2D" parent="." unique_id=2106852135]
+modulate = Color(0, 0, 0, 1)
 position = Vector2(576.75006, 329)
 scale = Vector2(0.5752499, 0.58349985)
 texture = ExtResource("1_ebmjs")
