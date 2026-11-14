@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://g0nfo73p5umy"]
 
-[node name="Node2D" type="Node2D" unique_id=45109936]
+[ext_resource type="Texture2D" uid="uid://cfma007p0ttbc" path="res://Assets/gamebg.png" id="1_ebmjs"]
+
+[node name="Game" type="Node2D" unique_id=45109936]
+
+[node name="Gamebg" type="Sprite2D" parent="." unique_id=2106852135]
+position = Vector2(585, 329)
+scale = Vector2(0.58349985, 0.58349985)
+texture = ExtResource("1_ebmjs")
