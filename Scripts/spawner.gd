@@ -34,3 +34,4 @@ func _process(delta: float) -> void:
 func _on_play_body_exited(body: Node2D) -> void:
 	if body.name == "PlayerBingbong":
 		print("killplayer")
+		body.offscreen()

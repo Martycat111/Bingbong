@@ -26,3 +26,8 @@ func _physics_process(delta: float) -> void:
 	if velocity.y < 0:
 		velocity.y += 500 * delta
 	move_and_slide()
+
+
+func offscreen():
+	# Player has gone offscreen
+	queue_free()
