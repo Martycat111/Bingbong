@@ -32,6 +32,9 @@ func _process(delta: float) -> void:
 		spawn()
 
 func _on_play_body_exited(body: Node2D) -> void:
+	print(body)
+	print(body.name)
 	if body.name == "PlayerBingbong":
 		print("killplayer")
 		body.offscreen()
+		get_tree().change_scene_to_file("res://Scenes/Score.tscn")

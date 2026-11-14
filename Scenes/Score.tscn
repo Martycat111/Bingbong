@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://le2fgrofv2nx"]
+
+[ext_resource type="Script" uid="uid://ctox5syehsbkm" path="res://Scenes/score_label.gd" id="1_5hcfu"]
+[ext_resource type="FontFile" uid="uid://d1bgsers3kqfp" path="res://Rostex-Oblique.otf" id="1_78k8p"]
+[ext_resource type="Script" uid="uid://c3ogvq86pc3fm" path="res://Scenes/playagain.gd" id="3_eixoy"]
+
+[node name="Score" type="Node2D" unique_id=800223282]
+
+[node name="Label" type="Label" parent="." unique_id=643541740]
+offset_left = 194.0
+offset_top = 188.0
+offset_right = 343.0
+offset_bottom = 488.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_78k8p")
+theme_override_font_sizes/font_size = 55
+script = ExtResource("1_5hcfu")
+
+[node name="Button" type="Button" parent="." unique_id=1711236095]
+offset_left = 414.0
+offset_top = 435.0
+offset_right = 610.0
+offset_bottom = 540.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_78k8p")
+theme_override_font_sizes/font_size = 33
+text = "Play Again"
+flat = true
+script = ExtResource("3_eixoy")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

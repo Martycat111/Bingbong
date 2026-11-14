@@ -13,3 +13,4 @@ func round_to_dec(num, digit):
 func _process(delta: float) -> void:
 	time += delta
 	set_text(str(round_to_dec(time, 1)))
+	Globals.score = time
