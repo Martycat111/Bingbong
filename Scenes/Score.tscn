@@ -5,6 +5,13 @@
 [ext_resource type="Script" uid="uid://c3ogvq86pc3fm" path="res://Scenes/playagain.gd" id="3_eixoy"]
 [ext_resource type="Script" uid="uid://cnvejtg1pl1gw" path="res://Scenes/exit.gd" id="4_mr7j5"]
 
+[sub_resource type="InputEventKey" id="InputEventKey_mr7j5"]
+device = -1
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_mr7j5"]
+events = [SubResource("InputEventKey_mr7j5")]
+
 [node name="Score" type="Node2D" unique_id=800223282]
 
 [node name="Label" type="Label" parent="." unique_id=643541740]
@@ -25,6 +32,7 @@ offset_bottom = 540.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_78k8p")
 theme_override_font_sizes/font_size = 33
+shortcut = SubResource("Shortcut_mr7j5")
 text = "Play Again"
 flat = true
 script = ExtResource("3_eixoy")
