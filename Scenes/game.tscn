@@ -1,10 +1,20 @@
 [gd_scene format=3 uid="uid://g0nfo73p5umy"]
 
 [ext_resource type="Texture2D" uid="uid://cfma007p0ttbc" path="res://Assets/gamebg.png" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://el8evdn3ibff" path="res://Scripts/spawner.gd" id="1_qxrlw"]
 
 [node name="Game" type="Node2D" unique_id=45109936]
 
+[node name="Spawner" type="Node2D" parent="." unique_id=321512283]
+script = ExtResource("1_qxrlw")
+
+[node name="top" type="Node2D" parent="Spawner" unique_id=1896421781]
+position = Vector2(1250, 195)
+
+[node name="bottom" type="Node2D" parent="Spawner" unique_id=938944472]
+position = Vector2(1250, 475)
+
 [node name="Gamebg" type="Sprite2D" parent="." unique_id=2106852135]
-position = Vector2(585, 329)
-scale = Vector2(0.58349985, 0.58349985)
+position = Vector2(576.75006, 329)
+scale = Vector2(0.5752499, 0.58349985)
 texture = ExtResource("1_ebmjs")
