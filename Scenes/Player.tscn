@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bolboguflol40"]
+
+[ext_resource type="Texture2D" uid="uid://tmdyv1i47r8" path="res://Assets/Player bingbong.png" id="1_rpqav"]
+
+[node name="Player" type="Node2D" unique_id=1367422132]
+
+[node name="PlayerBingbong" type="Sprite2D" parent="." unique_id=710691826]
+position = Vector2(81.5, 586.875)
+scale = Vector2(0.20731708, 0.19611181)
+texture = ExtResource("1_rpqav")
+
+[node name="Camera2D" type="Camera2D" parent="PlayerBingbong" unique_id=231988484]
