@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cfma007p0ttbc" path="res://Assets/gamebg.png" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://el8evdn3ibff" path="res://Scripts/spawner.gd" id="1_qxrlw"]
+[ext_resource type="Script" uid="uid://dujeoqt0pvva0" path="res://Scenes/label.gd" id="3_wrm1d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2b7dg"]
 size = Vector2(1996.5237, 758.2135)
@@ -34,3 +35,10 @@ shape = SubResource("RectangleShape2D_2b7dg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=226997955]
 position = Vector2(-6.5189953, -599.8288)
 shape = SubResource("RectangleShape2D_2b7dg")
+
+[node name="Label" type="Label" parent="." unique_id=2054885134]
+offset_left = 252.0
+offset_top = -119.0
+offset_right = 593.0
+offset_bottom = 30.0
+script = ExtResource("3_wrm1d")
