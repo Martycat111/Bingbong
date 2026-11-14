@@ -4,20 +4,19 @@
 [ext_resource type="Script" uid="uid://bkqf7uyfxaj4k" path="res://Scenes/player_bingbong.gd" id="2_kyqiw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2d2hh"]
-radius = 332.82355
+radius = 319.62244
 
 [node name="Player" type="Node2D" unique_id=1367422132]
+scale = Vector2(0.8, 0.8)
 
 [node name="PlayerBingbong" type="CharacterBody2D" parent="." unique_id=1211805969]
-scale = Vector2(0.20731708, 0.19611181)
+scale = Vector2(0.2, 0.2)
 script = ExtResource("2_kyqiw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerBingbong" unique_id=593104765]
+position = Vector2(0, -20)
 scale = Vector2(0.9999998, 0.9999999)
 shape = SubResource("CircleShape2D_2d2hh")
 
 [node name="PlayerBingbong2" type="Sprite2D" parent="PlayerBingbong" unique_id=1192223084]
-scale = Vector2(0.96470577, 1.0198263)
 texture = ExtResource("1_rpqav")
-
-[node name="Camera2D" type="Camera2D" parent="PlayerBingbong" unique_id=231988484]

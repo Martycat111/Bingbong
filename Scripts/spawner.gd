@@ -27,6 +27,10 @@ func spawn():
 
 func _process(delta: float) -> void:
 	time_since_spawn += delta
-	if time_since_spawn > time_between_spawns *  1 - (Globals.speed_multiplier - 1): # bro what
+	if time_since_spawn > time_between_spawns *  1 - (Globals.speed_multiplier - 1):
 		time_since_spawn = 0
 		spawn()
+
+func _on_play_body_exited(body: Node2D) -> void:
+	if body.name == "PlayerBingbong":
+		print("killplayer")
