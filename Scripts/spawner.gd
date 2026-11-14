@@ -18,6 +18,7 @@ func _ready() -> void:
 
 
 func spawn():
+	Globals.speed_multiplier += 0.1
 	var instance = obstacle_scene.instantiate()
 	if randf_range(0, 1) > 0.5:
 		top_obstacles.add_child(instance)
@@ -32,8 +33,6 @@ func _process(delta: float) -> void:
 		spawn()
 
 func _on_play_body_exited(body: Node2D) -> void:
-	print(body)
-	print(body.name)
 	if body.name == "PlayerBingbong":
 		print("killplayer")
 		body.offscreen()
