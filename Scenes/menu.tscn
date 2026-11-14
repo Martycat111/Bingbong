@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dr6ufxfol0uer"]
+
+[ext_resource type="Texture2D" uid="uid://bgiwn0nvs4ktv" path="res://Assets/title screen.png" id="1_xhh6f"]
+[ext_resource type="FontFile" uid="uid://d1bgsers3kqfp" path="res://Rostex-Oblique.otf" id="2_cayip"]
+
+[node name="Menu" type="Node2D" unique_id=353752980]
+
+[node name="TitleScreen" type="Sprite2D" parent="." unique_id=347506591]
+position = Vector2(583, 333.00003)
+scale = Vector2(2.32, 3.29)
+texture = ExtResource("1_xhh6f")
+
+[node name="Label" type="Label" parent="." unique_id=1491945481]
+offset_left = 49.0
+offset_top = 86.0
+offset_right = 348.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_cayip")
+theme_override_font_sizes/font_size = 36
+text = "BingBong"
