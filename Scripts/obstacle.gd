@@ -13,11 +13,18 @@ func _ready() -> void:
 		is_upside_down = false
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if is_upside_down:
-		self.position.x += delta * speed * Globals.speed_multiplier
-	else:
-		self.position.x -= delta * speed * Globals.speed_multiplier
-	if position.x > 1200:
+	if !Globals.reversed:
+		if is_upside_down:
+			self.position.x += delta * speed * Globals.speed_multiplier
+		else:
+			self.position.x -= delta * speed * Globals.speed_multiplier
+		if position.x > 1200:
+			queue_free()
+	if Globals.reversed:
+		if is_upside_down:
+			self.position.x -= delta * speed * Globals.speed_multiplier
+		else:
+			self.position.x += delta * speed * Globals.speed_multiplier
+	if abs(position.x) > 3000:
 		queue_free()

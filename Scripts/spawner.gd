@@ -41,6 +41,8 @@ func spawn():
 		instance.rotation = deg_to_rad(180)
 	else:
 		bottom_obstacles.add_child(instance)
+	if Globals.reversed:
+		instance.position.x -= 2000
 
 func _process(delta: float) -> void:
 	time += delta

@@ -13,4 +13,6 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	Globals.speed_multiplier = 1
+	Globals.score = 0
+	Globals.reversed = false
 	get_tree().change_scene_to_file("res://Scenes/game.tscn")
