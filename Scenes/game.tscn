@@ -31,6 +31,8 @@ freeze = true
 
 [node name="Gamebg" type="Sprite2D" parent="RigidBody2D" unique_id=2106852135]
 modulate = Color(0, 0, 0, 1)
+position = Vector2(-4.1286697, 8.997349)
+scale = Vector2(1.0076054, 0.99785787)
 texture = ExtResource("1_ebmjs")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="RigidBody2D" unique_id=1947170045]
