@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dujeoqt0pvva0" path="res://Scenes/label.gd" id="3_wrm1d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2b7dg"]
-size = Vector2(2016.9495, 758.2135)
+size = Vector2(2015.3335, 765.8975)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1tyn0"]
 size = Vector2(1148, 343)
@@ -31,16 +31,16 @@ freeze = true
 
 [node name="Gamebg" type="Sprite2D" parent="RigidBody2D" unique_id=2106852135]
 modulate = Color(0, 0, 0, 1)
-position = Vector2(-4.1286697, 8.997349)
+position = Vector2(-3.0422916, 18.851784)
 scale = Vector2(1.0076054, 0.99785787)
 texture = ExtResource("1_ebmjs")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="RigidBody2D" unique_id=1947170045]
-position = Vector2(-1.5211792, 622.108)
+position = Vector2(-3.59906, 636.5059)
 shape = SubResource("RectangleShape2D_2b7dg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=226997955]
-position = Vector2(-6.5189953, -599.8288)
+position = Vector2(-3.6330566, -597.34283)
 shape = SubResource("RectangleShape2D_2b7dg")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1490485489]
