@@ -5,6 +5,8 @@ var time_between_spawns = 2
 var time_since_spawn = 0
 
 var obstacle_scene = load("res://Scenes/Obstacle.tscn")
+var obstacle2_scene = load("res://Scenes/Obstacle2.tscn")
+
 
 var player_scene = load("res://Scenes/Player.tscn")
 
@@ -21,13 +23,16 @@ func _ready() -> void:
 	self.add_child(instance)
 
 func reverse():
-	print("reverse")
 	reverse_time = time + randi_range(5, 20)
 	Globals.reversed = !Globals.reversed
 
 func spawn():
 	Globals.speed_multiplier += 0.1
+	Globals.speed_multiplier = clamp(Globals.speed_multiplier, 1, 3)
+	var chance = randf_range(0, 1)
 	var instance = obstacle_scene.instantiate()
+	if chance > 0.5:
+		instance = obstacle2_scene.instantiate()
 	if randf_range(0, 1) > 0.5:
 		top_obstacles.add_child(instance)
 		instance.rotation = deg_to_rad(180)

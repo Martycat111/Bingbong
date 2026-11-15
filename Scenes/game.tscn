@@ -9,7 +9,7 @@
 size = Vector2(2016.9495, 758.2135)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1tyn0"]
-size = Vector2(1252, 343)
+size = Vector2(1148, 343)
 
 [node name="Game" type="Node2D" unique_id=45109936]
 
@@ -46,7 +46,7 @@ shape = SubResource("RectangleShape2D_2b7dg")
 [node name="Area2D" type="Area2D" parent="." unique_id=1490485489]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1744090908]
-position = Vector2(586, 338.5)
+position = Vector2(579, 338.5)
 shape = SubResource("RectangleShape2D_1tyn0")
 
 [node name="Label" type="Label" parent="." unique_id=2054885134]

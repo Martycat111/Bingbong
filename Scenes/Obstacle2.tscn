@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cqj5pitywsnev"]
+
+[ext_resource type="Script" uid="uid://ba4s2xsu60hpp" path="res://Scripts/obstacle.gd" id="1_0844i"]
+[ext_resource type="Texture2D" uid="uid://cey8yjxugdfuq" path="res://Assets/obstacle2.png" id="2_0844i"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2sxyv"]
+
+[node name="Obstacle" type="StaticBody2D" unique_id=1369354784]
+physics_material_override = SubResource("PhysicsMaterial_2sxyv")
+script = ExtResource("1_0844i")
+
+[node name="Obstacle" type="Sprite2D" parent="." unique_id=1567840298]
+position = Vector2(-0.99999994, -80.99999)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_0844i")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1042038862]
+polygon = PackedVector2Array(-10.555556, -2.2222223, 46.111115, -0.5555556, 46.666668, -76.66667, 44.444447, -89.44445, 35.555557, -104.44445, 27.222223, -117.22223, 14.444445, -128.8889, -2.777778, -139.44446, -23.333334, -146.66667, -36.111115, -150.55556, -42.222225, -155, -50.000004, -157.77779, -61.111115, -161.11111, -81.111115, -161.11111, -81.111115, -142.22223, -45.555557, -126.66667, -42.222225, -123.333336, -10, -113.88889, 11.111112, -104.44445, 22.777779, -94.44445, 27.777779, -81.111115, 27.777779, -66.111115)

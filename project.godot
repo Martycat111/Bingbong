@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Bingbong"
-run/main_scene="uid://g0nfo73p5umy"
+run/main_scene="uid://dr6ufxfol0uer"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
