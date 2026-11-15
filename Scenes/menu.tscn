@@ -7,8 +7,8 @@
 [node name="Menu" type="Node2D" unique_id=353752980]
 
 [node name="TitleScreen" type="Sprite2D" parent="." unique_id=347506591]
-position = Vector2(583, 333.00003)
-scale = Vector2(2.32, 3.29)
+position = Vector2(580.50006, 327.5)
+scale = Vector2(2.31, 3.245)
 texture = ExtResource("1_xhh6f")
 script = ExtResource("2_158mb")
 
