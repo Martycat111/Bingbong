@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ctox5syehsbkm" path="res://Scenes/score_label.gd" id="1_5hcfu"]
 [ext_resource type="FontFile" uid="uid://d1bgsers3kqfp" path="res://Rostex-Oblique.otf" id="1_78k8p"]
 [ext_resource type="Script" uid="uid://c3ogvq86pc3fm" path="res://Scenes/playagain.gd" id="3_eixoy"]
+[ext_resource type="Script" uid="uid://30l5w1105oe3" path="res://Scenes/highscore.gd" id="3_v21rk"]
 [ext_resource type="Script" uid="uid://cnvejtg1pl1gw" path="res://Scenes/exit.gd" id="4_mr7j5"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_mr7j5"]
@@ -14,16 +15,28 @@ events = [SubResource("InputEventKey_mr7j5")]
 
 [node name="Score" type="Node2D" unique_id=800223282]
 
-[node name="Label" type="Label" parent="." unique_id=643541740]
+[node name="Score" type="Label" parent="." unique_id=643541740]
 offset_left = 194.0
 offset_top = 188.0
-offset_right = 343.0
+offset_right = 664.0
 offset_bottom = 488.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_78k8p")
 theme_override_font_sizes/font_size = 55
-text = "score"
+text = "score
+"
 script = ExtResource("1_5hcfu")
+
+[node name="Highscore" type="Label" parent="." unique_id=750182431]
+offset_left = 192.0
+offset_top = 243.0
+offset_right = 662.0
+offset_bottom = 543.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_78k8p")
+theme_override_font_sizes/font_size = 55
+text = "highscore"
+script = ExtResource("3_v21rk")
 
 [node name="Button" type="Button" parent="." unique_id=1711236095]
 offset_left = 414.0
