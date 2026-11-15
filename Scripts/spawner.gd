@@ -22,10 +22,17 @@ var reverse_time = time + randi_range(5, 20)
 
 
 func _ready() -> void:
+	# Create player
 	var instance = player_scene.instantiate()
 	self.add_child(instance)
+	
+	#Initialize Global variables
+	Globals.speed_multiplier = 1
+	Globals.score = 0
+	Globals.reversed = false
 
 func reverse():
+	time_since_spawn = 0
 	reverse_time = time + randi_range(5, 20)
 	Globals.reversed = !Globals.reversed
 
