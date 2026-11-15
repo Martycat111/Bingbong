@@ -8,6 +8,10 @@ var obstacle_scene = load("res://Scenes/Obstacle.tscn")
 
 var player_scene = load("res://Scenes/Player.tscn")
 
+var time = 0
+
+var reverse_time = time + randi_range(5, 20)
+
 @onready var top_obstacles = get_node("top")
 @onready var bottom_obstacles = get_node("bottom")
 
@@ -16,6 +20,10 @@ func _ready() -> void:
 	var instance = player_scene.instantiate()
 	self.add_child(instance)
 
+func reverse():
+	print("reverse")
+	reverse_time = time + randi_range(5, 20)
+	Globals.reversed = !Globals.reversed
 
 func spawn():
 	Globals.speed_multiplier += 0.1
@@ -27,13 +35,15 @@ func spawn():
 		bottom_obstacles.add_child(instance)
 
 func _process(delta: float) -> void:
+	time += delta
 	time_since_spawn += delta
 	if time_since_spawn > time_between_spawns *  1 - (Globals.speed_multiplier - 1):
 		time_since_spawn = 0
 		spawn()
+	if time > reverse_time:
+		reverse()
 
 func _on_play_body_exited(body: Node2D) -> void:
 	if body.name == "PlayerBingbong":
-		print("killplayer")
 		body.offscreen()
 		get_tree().change_scene_to_file("res://Scenes/Score.tscn")

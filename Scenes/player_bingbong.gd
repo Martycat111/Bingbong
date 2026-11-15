@@ -25,6 +25,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x += 500 * delta
 	if velocity.y < 0:
 		velocity.y += 500 * delta
+	velocity.x -= 10
 	move_and_slide()
 
 
