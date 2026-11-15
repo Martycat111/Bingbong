@@ -5,7 +5,10 @@ func round_to_dec(num, digit):
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if Globals.score > Globals.highscore:
+		Globals.highscore = Globals.score
 	set_text("your score: " + str(round_to_dec(Globals.score, 1)))
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
