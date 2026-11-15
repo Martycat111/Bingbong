@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d3lcklogije35"]
+
+[ext_resource type="Script" uid="uid://ba4s2xsu60hpp" path="res://Scripts/obstacle.gd" id="1_3cqif"]
+[ext_resource type="Texture2D" uid="uid://bh871000kqgyr" path="res://Assets/obstacle3.png" id="2_3cqif"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2sxyv"]
+
+[node name="Obstacle" type="StaticBody2D" unique_id=1369354784]
+physics_material_override = SubResource("PhysicsMaterial_2sxyv")
+script = ExtResource("1_3cqif")
+
+[node name="Obstacle" type="Sprite2D" parent="." unique_id=1567840298]
+position = Vector2(18, -79)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2_3cqif")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1042038862]
+polygon = PackedVector2Array(-8, 0, 11, 1, 11, -155, -8, -155)

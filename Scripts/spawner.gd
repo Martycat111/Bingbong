@@ -9,7 +9,7 @@ var time_since_speedup = 0
 
 var obstacle_scene = load("res://Scenes/Obstacle.tscn")
 var obstacle2_scene = load("res://Scenes/Obstacle2.tscn")
-
+var obstacle3_scene = load("res://Scenes/Obstacle3.tscn")
 
 var player_scene = load("res://Scenes/Player.tscn")
 
@@ -32,8 +32,10 @@ func reverse():
 func spawn():
 	var chance = randf_range(0, 1)
 	var instance = obstacle_scene.instantiate()
-	if chance > 0.5:
+	if chance > 0.66:
 		instance = obstacle2_scene.instantiate()
+	if chance < 0.66 and chance > 0.33:
+		instance = obstacle3_scene.instantiate()
 	if randf_range(0, 1) > 0.5:
 		top_obstacles.add_child(instance)
 		instance.rotation = deg_to_rad(180)
