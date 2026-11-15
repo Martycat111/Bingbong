@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bolboguflol40"]
 
-[ext_resource type="Texture2D" uid="uid://lhc8bx3gg2de" path="res://Assets/player6.png" id="2_gntrk"]
+[ext_resource type="Texture2D" uid="uid://b5dyq3jtl1hop" path="res://Assets/player8.png" id="2_gntrk"]
 [ext_resource type="Script" uid="uid://bkqf7uyfxaj4k" path="res://Scenes/player_bingbong.gd" id="2_kyqiw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2d2hh"]
@@ -14,11 +14,11 @@ scale = Vector2(0.2, 0.2)
 script = ExtResource("2_kyqiw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerBingbong" unique_id=593104765]
-position = Vector2(0, -20)
+position = Vector2(-12.5, -24.999998)
 scale = Vector2(0.9999998, 0.9999999)
 shape = SubResource("CircleShape2D_2d2hh")
 
 [node name="PlayerBingbong2" type="Sprite2D" parent="PlayerBingbong" unique_id=1192223084]
-position = Vector2(6.25, -18.75)
+position = Vector2(-18.75, -37.5)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_gntrk")
